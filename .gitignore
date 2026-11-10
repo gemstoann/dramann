@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+cpp/search_v3
+indexes/
+data/bigann/
+data/gnd/
+*.log
+results/
+figures/*.pdf
+.DS_Store

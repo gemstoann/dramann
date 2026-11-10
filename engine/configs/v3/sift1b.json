@@ -1,0 +1,28 @@
+{
+  "schema": 3,
+  "dim": 128,
+  "paths": {
+    "base": "data/bigann/base1b.u8bin",
+    "query": "data/bigann/query.u8bin",
+    "gt": "data/gnd/idx_1000M.ivecs",
+    "out_dir": "indexes/v3_sift1b"
+  },
+  "index": {
+    "n_vectors": 1000000000,
+    "n_clusters": 1000000,
+    "coarse_clusters": 4096,
+    "train_per_centroid": 64,
+    "niter": 20,
+    "split_factor": 3.0,
+    "pq_m": 64,
+    "pq_train": 2000000,
+    "replicas": 8,
+    "closure_eps": 0.3,
+    "assign_k": 12,
+    "assign_ef": 64,
+    "hnsw_m": 32,
+    "hnsw_ef_construction": 100,
+    "chunk": 1000000,
+    "spill_parts": 64
+  }
+}
