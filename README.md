@@ -4,7 +4,6 @@ Supplemental code for the ICDE 2027 paper *DRAMANN: Billion-Scale Vector Search 
 
 This branch is the artifact: the searcher, the builder, the configs used in the paper, a sweep script, and the CSV/JSONL files that generate the figures. It is not a dump of the lab machine.
 
-Source comments may still say TapeANN. The paper name is DRAMANN.
 
 ## What is here
 
@@ -18,16 +17,6 @@ Source comments may still say TapeANN. The paper name is DRAMANN.
 | `engine/requirements.txt` | Python deps for the builder |
 | `figures/src/` | Figure script and the inputs used in the paper |
 
-## What is not here (do not add)
-
-- Indexes (`indexes/v3_sift1b` is about 200 GB; DiskANN 1B is about 442 GB)
-- BIGANN vectors (`base1b.u8bin` is about 128 GB) and official ground-truth `.ivecs`
-- Compiled binaries, `.venv`, logs, `results/`
-- The Overleaf / LaTeX paper, internal notes, revision notes
-- Old SIFT1M/SIFT10M trees, schema-2 covering search, DiskANN/Starling/SPANN binaries
-- Machine-specific drivers that hard-code `/home/...` paths (`run_native.py`, `run_v3_session.sh`)
-
-Edit the four `paths` fields in a config. Do not commit your local absolute paths.
 
 ## Dependencies
 
